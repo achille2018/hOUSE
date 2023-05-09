@@ -88,13 +88,13 @@ import { Button, Container, Form } from "react-bootstrap";
 import { ContractKit } from "@celo/contractkit";
 import Web3 from "web3";
 
-const web3 = new Web3(window.celo);
+ const web3 = new Web3(window.celo);
 
-const kit = ContractKit.newKit("https://forno.celo.org");
+ const kit = ContractKit.newKit("https://forno.celo.org");
 
-const contractAddress = "YOUR_CONTRACT_ADDRESS_HERE";
+ const contractAddress = "YOUR_CONTRACT_ADDRESS_HERE";
 
-const contractABI = [
+ const contractABI = [
   {
     inputs: [],
     name: "getValue",
@@ -109,7 +109,7 @@ const contractABI = [
     stateMutability: "nonpayable",
     type: "function",
   },
-];
+ ];
 
 const myContract = new kit.web3.eth.Contract(contractABI, contractAddress);
 
