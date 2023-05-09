@@ -1,20 +1,33 @@
-## Title: Building a Decentralized Application using Celo Blockchain
+# Title: Building a Decentralized Application using Celo Blockchain
 
 ## Introduction:
 In this tutorial, we will learn how to build a decentralized application (DApp) using Celo blockchain technology. We will be using the Celo development environment to create a simple smart contract and deploy it to the Celo blockchain. Then, we will create a frontend interface using React.js to interact with the smart contract.
 
 Celo is an open-source blockchain platform that enables the creation of decentralized applications with a focus on mobile accessibility and financial inclusion. Celo uses a Proof of Stake (PoS) consensus mechanism and has its own stablecoin called cUSD, which is pegged to the US dollar.
 
+## Table of content
+- [Building a Decentralized Application using Celo Blockchain](#Building-a-decentralized-application-using-celo-blockchain)
+  - [Table of content](#table-of-content)
+  - [Introduction](#introduction)
+  - [Prerequisites](#prerequisites)
+  - [Tutorial](#tutorial)
+    - [Step 1: Writing the Smart Contract](#step-2-writing-the-smart-contract)
+    - [Step 2: Compiling and Deploying the Smart Contract](#step-2-compiling-and-deploying-the-smart-contract)
+    - [Step 3: Compiling and Deploying the Smart Contract](#step-3-compiling-and-deploying-the-smart-Contract)
+    - [Step 4: Building the Frontend Interface](#step-4-building-the-frontend-interface)
+    - [Step 5: Running the Application](#step-5-running-the-application)
+
 ## Prerequisites:
 
-Basic knowledge of JavaScript and React.js
-Basic understanding of blockchain technology and smart contracts
-Tools Used:
+- Basic knowledge of JavaScript and React.js
+- Basic understanding of blockchain technology and smart contracts
+- Tools Used:
+   - Celo Wallet Extension: to create a new account on the Celo network and transfer cUSD for gas fees
+   - Remix IDE: to write, compile, and deploy the smart contract to the Celo network
+   - React.js: to build the frontend interface
 
-Celo Wallet Extension: to create a new account on the Celo network and transfer cUSD for gas fees
-Remix IDE: to write, compile, and deploy the smart contract to the Celo network
-React.js: to build the frontend interface
-Step 1: Setting up the Development Environment
+## Tutorial
+## Step 1: Setting up the Development Environment
 To get started, we need to set up our development environment. First, we need to install the Celo Wallet Extension on our browser. This extension allows us to create a new account on the Celo network, view our account balances, and transfer cUSD for gas fees.
 
 Once the extension is installed, we can create a new account and fund it with some cUSD. This cUSD will be used to pay for the gas fees required to deploy our smart contract to the Celo network.
@@ -31,7 +44,7 @@ Now that our development environment is set up, we can start writing our smart c
 
 Open Remix IDE and create a new file called MyContract.sol. Then, copy and paste the following code into the file:
 
-
+```solidity
 pragma solidity ^0.8.0;
 
 contract MyContract {
@@ -45,6 +58,7 @@ contract MyContract {
         return value;
     }
 }
+```
 
 This smart contract defines a private string variable called value and two functions: setValue and getValue. The setValue function takes a string parameter and sets the value of value, while the getValue function returns the current value of value.
 
@@ -76,14 +90,14 @@ Now that our smart contract is deployed to the Celo network, we can build the fr
 
 Open the my-dapp directory in your terminal and install the following dependencies:
 
-bash
-
+```
 npm install @celo/contractkit web3 react-bootstrap
+```
 @celo/contractkit is a library that allows us to interact with smart contracts on the Celo network. web3 is a library that allows us to connect to the Celo network using the Celo Wallet Extension. react-bootstrap is a library of pre-built UI components that we can use to build our interface.
 
 Create a new file called MyContract.js in the src directory and copy and paste the following code into the file: 
 
-```
+```javascript
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { ContractKit } from "@celo/contractkit";
@@ -170,7 +184,6 @@ export default MyContract;
 ```
 **
 
-
 This code imports the necessary libraries and sets up the connection to the Celo network using the Celo Wallet Extension. It also defines the contract address and ABI, which we obtained in the previous step.
 
 code also defines a new instance of the ContractKit and a new instance of the smart contract using the contract address and ABI.
@@ -186,7 +199,7 @@ The handleGetValue function is called when the user clicks the "Get Value" butto
 Finally, the MyContract component returns a Bootstrap container with a title, the current value of the smart contract, an input field and a button to set the new value, and a button to get the current value.
 
 Open the App.js file in the src directory and replace the code with the following:  
-```
+```javascript
 import React from "react";
 import { Container } from "react-bootstrap";
 import MyContract from "./MyContract";
@@ -216,8 +229,8 @@ Finally, the MyContract component returns a Bootstrap container with a title, th
 
 Open the App.js file in the src directory and replace the code with the following:
 
-javascript
-```
+
+```javascript
 import React from "react";
 import { Container } from "react-bootstrap";
 import MyContract from "./MyContract";
@@ -239,8 +252,9 @@ Now that we have built our smart contract and frontend interface, we can run our
 
 In your terminal, navigate to the my-dapp directory and run the following command: 
 
+```
 npm start
-
+```
 
 code also defines a new instance of the ContractKit and a new instance of the smart contract using the contract address and ABI.
 
@@ -256,8 +270,7 @@ Finally, the MyContract component returns a Bootstrap container with a title, th
 
 Open the App.js file in the src directory and replace the code with the following:
 
-javascript
-```
+```javascript
 import React from "react";
 import { Container } from "react-bootstrap";
 import MyContract from "./MyContract";
