@@ -89,16 +89,6 @@ Open the my-dapp directory in your terminal and install the following dependenci
 npm install @celo/contractkit web3 react-bootstrap
 ```
 
-Once the transaction is confirmed, you should see a message in Remix IDE indicating that the smart contract has been deployed successfully. The message will contain the contract address, which we will need in the next step.
-
-Step 4: Building the Frontend Interface
-Now that our smart contract is deployed to the Celo network, we can build the frontend interface to interact with it.
-
-Open the my-dapp directory in your terminal and install the following dependencies:
-
-```bash
-npm install @celo/contractkit web3 react-bootstrap
-```
 `@celo/contractkit` is a library that allows us to interact with smart contracts on the Celo network. `web3` is a library that allows us to connect to the Celo network using the Celo Extension Wallet. `react-bootstrap` is a library of pre-built UI components that we can use to build our interface.
 
 Create a new file called `MyContract.js` in the src directory and copy and paste the following code into the file: 
