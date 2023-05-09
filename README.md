@@ -83,6 +83,11 @@ npm install @celo/contractkit web3 react-bootstrap
 
 Create a new file called MyContract.js in the src directory and copy and paste the following code into the file: 
 
+
+
+
+
+**
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { ContractKit } from "@celo/contractkit";
@@ -166,6 +171,10 @@ const MyContract = () => {
 };
 
 export default MyContract;
+
+
+**
+
 
 This code imports the necessary libraries and sets up the connection to the Celo network using the Celo Wallet Extension. It also defines the contract address and ABI, which we obtained in the previous step.
 
