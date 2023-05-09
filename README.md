@@ -48,7 +48,7 @@ contract MyContract {
 
 This smart contract defines a private string variable called value and two functions: setValue and getValue. The setValue function takes a string parameter and sets the value of value, while the getValue function returns the current value of value.
 
-Step 3: Compiling and Deploying the Smart Contract
+## Step 3: Compiling and Deploying the Smart Contract
 Now that we have written our smart contract, we need to compile and deploy it to the Celo network. Remix IDE allows us to do this easily.
 
 In Remix IDE, switch to the Solidity tab and select MyContract.sol. Then, click on the Compile button to compile the smart contract. Once the compilation is successful, you should see a green checkmark next to the file name.
