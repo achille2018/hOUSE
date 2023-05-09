@@ -65,9 +65,9 @@ Once the transaction is confirmed, you should see a message in Remix IDE indicat
 Now that our smart contract is deployed to the Celo network, we can build the frontend interface to interact with it.
 
 Open the my-dapp directory in your terminal and install the following dependencies:
-
+```
 npm install @celo/contractkit web3 react-bootstrap
-
+```
 
 Once the transaction is confirmed, you should see a message in Remix IDE indicating that the smart contract has been deployed successfully. The message will contain the contract address, which we will need in the next step.
 
@@ -77,7 +77,7 @@ Now that our smart contract is deployed to the Celo network, we can build the fr
 Open the my-dapp directory in your terminal and install the following dependencies:
 
 bash
-Copy code
+
 npm install @celo/contractkit web3 react-bootstrap
 @celo/contractkit is a library that allows us to interact with smart contracts on the Celo network. web3 is a library that allows us to connect to the Celo network using the Celo Wallet Extension. react-bootstrap is a library of pre-built UI components that we can use to build our interface.
 
@@ -186,7 +186,7 @@ The handleGetValue function is called when the user clicks the "Get Value" butto
 Finally, the MyContract component returns a Bootstrap container with a title, the current value of the smart contract, an input field and a button to set the new value, and a button to get the current value.
 
 Open the App.js file in the src directory and replace the code with the following:  
-
+```
 import React from "react";
 import { Container } from "react-bootstrap";
 import MyContract from "./MyContract";
@@ -201,7 +201,7 @@ function App() {
 
 export default App; 
 
-
+```
 code also defines a new instance of the ContractKit and a new instance of the smart contract using the contract address and ABI.
 
 Next, the code defines a functional component called MyContract. This component uses React hooks to manage the state of the component. The state includes the current value of the smart contract and the new value that the user enters in the input field.
@@ -217,7 +217,7 @@ Finally, the MyContract component returns a Bootstrap container with a title, th
 Open the App.js file in the src directory and replace the code with the following:
 
 javascript
-Copy code
+```
 import React from "react";
 import { Container } from "react-bootstrap";
 import MyContract from "./MyContract";
@@ -231,9 +231,10 @@ function App() {
 }
 
 export default App;
+```
 This code imports the MyContract component and renders it inside a Bootstrap container.
 
-Step 5: Running the Application
+## Step 5: Running the Application
 Now that we have built our smart contract and frontend interface, we can run our application to see it in action.
 
 In your terminal, navigate to the my-dapp directory and run the following command: 
@@ -256,7 +257,7 @@ Finally, the MyContract component returns a Bootstrap container with a title, th
 Open the App.js file in the src directory and replace the code with the following:
 
 javascript
-Copy code
+```
 import React from "react";
 import { Container } from "react-bootstrap";
 import MyContract from "./MyContract";
@@ -271,15 +272,16 @@ function App() {
 
 export default App;
 This code imports the MyContract component and renders it inside a Bootstrap container.
+```
 
-Step 5: Running the Application
 Now that we have built our smart contract and frontend interface, we can run our application to see it in action.
 
 In your terminal, navigate to the my-dapp directory and run the following command:
 
 sql
-Copy code
+```
 npm start
+```
 This command will start the development server and open the application in your default browser.
 
 You should see a form that allows you to set and get the value of the smart contract. Enter a new value in the input field and click the "Set Value" button to set the new value. Click the "Get Value" button to retrieve the current value of the smart contract.
