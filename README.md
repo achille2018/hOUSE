@@ -6,7 +6,7 @@ In this tutorial, we will learn how to build a decentralized application (DApp) 
 Celo is an open-source blockchain platform that enables the creation of decentralized applications with a focus on mobile accessibility and financial inclusion. Celo uses a Proof of Stake (PoS) consensus mechanism and has its own stablecoin called cUSD, which is pegged to the US dollar.
 
 ## Table of content
-- Building a Decentralized Application using Celo Blockchain
+- [Building a Decentralized Application using Celo Blockchain](#Building-a-decentralized-application-using-celo-blockchain)
   - [Table of content](#table-of-content)
   - [Introduction](#introduction)
   - [Prerequisites](#prerequisites)
