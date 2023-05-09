@@ -1,4 +1,4 @@
-## Title: Building a Decentralized Application using Celo Blockchain
+# Title: Building a Decentralized Application using Celo Blockchain
 
 ## Introduction:
 In this tutorial, we will learn how to build a decentralized application (DApp) using Celo blockchain technology. We will be using the Celo development environment to create a simple smart contract and deploy it to the Celo blockchain. Then, we will create a frontend interface using React.js to interact with the smart contract.
@@ -7,14 +7,14 @@ Celo is an open-source blockchain platform that enables the creation of decentra
 
 ## Prerequisites:
 
-Basic knowledge of JavaScript and React.js
-Basic understanding of blockchain technology and smart contracts
-Tools Used:
+- Basic knowledge of JavaScript and React.js
+- Basic understanding of blockchain technology and smart contracts
+- Tools Used:
+   - Celo Wallet Extension: to create a new account on the Celo network and transfer cUSD for gas fees
+   - Remix IDE: to write, compile, and deploy the smart contract to the Celo network
+   - React.js: to build the frontend interface
 
-Celo Wallet Extension: to create a new account on the Celo network and transfer cUSD for gas fees
-Remix IDE: to write, compile, and deploy the smart contract to the Celo network
-React.js: to build the frontend interface
-Step 1: Setting up the Development Environment
+## Step 1: Setting up the Development Environment
 To get started, we need to set up our development environment. First, we need to install the Celo Wallet Extension on our browser. This extension allows us to create a new account on the Celo network, view our account balances, and transfer cUSD for gas fees.
 
 Once the extension is installed, we can create a new account and fund it with some cUSD. This cUSD will be used to pay for the gas fees required to deploy our smart contract to the Celo network.
@@ -31,7 +31,7 @@ Now that our development environment is set up, we can start writing our smart c
 
 Open Remix IDE and create a new file called MyContract.sol. Then, copy and paste the following code into the file:
 
-
+```
 pragma solidity ^0.8.0;
 
 contract MyContract {
@@ -45,6 +45,7 @@ contract MyContract {
         return value;
     }
 }
+```
 
 This smart contract defines a private string variable called value and two functions: setValue and getValue. The setValue function takes a string parameter and sets the value of value, while the getValue function returns the current value of value.
 
