@@ -26,6 +26,7 @@ Celo is an open-source blockchain platform that enables the creation of decentra
    - Remix IDE: to write, compile, and deploy the smart contract to the Celo network
    - React.js: to build the frontend interface
 
+## Tutorial
 ## Step 1: Setting up the Development Environment
 To get started, we need to set up our development environment. First, we need to install the Celo Wallet Extension on our browser. This extension allows us to create a new account on the Celo network, view our account balances, and transfer cUSD for gas fees.
 
