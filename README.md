@@ -1,5 +1,13 @@
 ## Title: Building a Decentralized Application using Celo Blockchain
 
+## Table of content
+- [table of content](#table-of-content)
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Step 1: Writing the Smart Contract](#step-2-writing-the-smart-contract)
+- [Step 2: Compiling and Deploying the Smart Contract](#step-2-compiling-and-deploying-the-smart-contract)
+    
+
 ## Introduction:
 In this tutorial, we will learn how to build a decentralized application (DApp) using Celo blockchain technology. We will be using the Celo development environment to create a simple smart contract and deploy it to the Celo blockchain. Then, we will create a frontend interface using React.js to interact with the smart contract.
 
@@ -26,7 +34,7 @@ Finally, we need to create a new React.js project. We can do this by running the
 npx create-react-app my-dapp
 
 
-## Step 2: Writing the Smart Contract
+## Step 1: Writing the Smart Contract
 Now that our development environment is set up, we can start writing our smart contract. In this tutorial, we will create a simple smart contract that stores a single string value.
 
 Open Remix IDE and create a new file called MyContract.sol. Then, copy and paste the following code into the file:
@@ -48,7 +56,7 @@ contract MyContract {
 
 This smart contract defines a private string variable called value and two functions: setValue and getValue. The setValue function takes a string parameter and sets the value of value, while the getValue function returns the current value of value.
 
-## Step 3: Compiling and Deploying the Smart Contract
+## Step 2: Compiling and Deploying the Smart Contract
 Now that we have written our smart contract, we need to compile and deploy it to the Celo network. Remix IDE allows us to do this easily.
 
 In Remix IDE, switch to the Solidity tab and select MyContract.sol. Then, click on the Compile button to compile the smart contract. Once the compilation is successful, you should see a green checkmark next to the file name.
